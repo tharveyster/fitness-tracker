@@ -6,9 +6,9 @@ This is a fitness tracker app that was built using JavaScript, MongoDB, Mongoose
 
 The app allows you to track your fitness workouts, to keep track of the amount of weight lifted, or distance traveled for cardio exercises, the amount of time spent working out, the number of sets performed, and the number of reps.
 
-The dashboard page shows two graphs. The first indicates the total time spend on each workout, and the second shows the total amount of weight lifted for each workout.
-
 You can either add an exercise to the most recent existing workout, or start a new blank workout.
+
+The dashboard page shows two graphs. The first indicates the total time spend on each workout, and the second shows the total amount of weight lifted for each workout. The graphs show the seven most recent workouts.
 
 ## Deployed Link
 This app has been deployed to Heroku at [this link](https://murmuring-lake-01147.herokuapp.com/).

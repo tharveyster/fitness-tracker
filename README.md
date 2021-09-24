@@ -8,6 +8,8 @@ The app allows you to track your fitness workouts, to keep track of the amount o
 
 The dashboard page shows two graphs. The first indicates the total time spend on each workout, and the second shows the total amount of weight lifted for each workout.
 
+You can either add an exercise to the most recent existing workout, or start a new blank workout.
+
 ## Deployed Link
 This app has been deployed to Heroku at [this link](https://murmuring-lake-01147.herokuapp.com/).
 

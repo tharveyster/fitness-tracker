@@ -16,7 +16,12 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+});
 
 app.get("/exercise", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/exercise.html"));
@@ -58,8 +63,6 @@ app.get("/api/workouts/range", function (req, res) {
 
 app.post("/api/workouts", ({ body }, res) => {
   db.Workout.create(body)
-    .then(({ _id }) => db.Workout.findOneAndUpdate({},
-      { $push: { exercises: _id } }, { new: true }))
     .then(dbWorkouts => {
       res.json(dbWorkouts);
     })

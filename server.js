@@ -54,6 +54,8 @@ app.get("/api/workouts/range", function (req, res) {
         totalDuration: { $sum: "$exercises.duration" },
       },
     },
+    {$sort: { day: -1 }},
+    {$limit: 7},
   ])
   .then((dbWorkouts) => {
     res.json(dbWorkouts);

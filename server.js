@@ -52,12 +52,14 @@ app.get("/api/workouts/range", function (req, res) {
     {
       $addFields: {
         totalDuration: { $sum: "$exercises.duration" },
-        dateDifference: { $subtract: [new Date(), "$day"], },
-      }
+      },
     },
   ])
-  .then(function (dbWorkouts) {
+  .then((dbWorkouts) => {
     res.json(dbWorkouts);
+  })
+  .catch((err) => {
+    res.json(err);
   });
 });
 

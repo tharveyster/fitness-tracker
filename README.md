@@ -10,9 +10,6 @@ You can either add an exercise to the most recent existing workout, or start a n
 
 The dashboard page shows two graphs. The first indicates the total time spend on each workout, and the second shows the total amount of weight lifted for each workout. The graphs show the seven most recent workouts.
 
-## Deployed Link
-This app has been deployed to Heroku at [this link](https://murmuring-lake-01147.herokuapp.com/).
-
 ## Screenshots
 Main page            | New workout page
 :-------------------:|:-------------------:
@@ -22,7 +19,7 @@ Add Exercise         | Fitness Dashboard
 
 
 ## Questions
-If you have questions about this repo, open an issue or contact me directly at todd@theharveysplace.com. You can find more of my work at [tharveyster](https://github.com/tharveyster).
+If you have questions about this repo, open an issue or contact me directly at todd@weloveeats.com. You can find more of my work at [tharveyster](https://github.com/tharveyster).
 
 ## License
 ISC
